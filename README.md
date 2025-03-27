@@ -1,2 +1,1 @@
-# Splatoon-Vodyssey
- A web app containing many high level Splatoon matches
+https://uiverse.io/MuhammadHasann/silent-lizard-44
