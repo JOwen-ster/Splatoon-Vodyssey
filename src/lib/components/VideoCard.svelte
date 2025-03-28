@@ -1,43 +1,47 @@
 <script>
-    let { title="Title", video_url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4", tags=['Tag1', 'Tag2', 'Tag3'] } = $props()
+    let { title="Title", video_url="/SplatoonVodsIntro.mp4", player="player", tags=['tag1', 'tag2', 'tag3'] } = $props()
 </script>
 
 <style>
-    .element {
+    .item {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        border: 5px solid #f4f5f6;
     }
 
     .element-title {
-        color: white;
+        color: #f4f5f6;
     }
 
     .element-video {
-        color: white;
+        color: black;
+        width: 100%
     }
 
     .element-tag-container {
         display: flex;
         gap: 10px;
-        color: white;
+    }
+
+    .element-tag-container-player {
+        color: red;
     }
 
     .element-tag-container-item {
-        color: white;
+        color: #f4f5f6;
     }
 </style>
 
-<div class="element">
-    <h6 class="element-title">{title}</h6>
+<div class="item">
+    <h3 class="element-title">{title}</h3>
     <video class="element-video" controls>
         <source src={video_url} type="video/mp4" />
         <track src="captions.vtt" kind="captions" srclang="en" label="English Captions" />
     </video>
+    <span class="element-tag-container-player">{player}</span>
     <div class="element-tag-container">
         {#each tags as tag}
-            <div class="element-tag-container-item">{tag}</div>
+            <span class="element-tag-container-item">{tag}</span>
         {/each}
     </div>
 </div>

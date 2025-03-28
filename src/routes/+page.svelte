@@ -3,13 +3,7 @@
     import RedirectButton from "$lib/components/RedirectButton.svelte";
 </script>
 
-<style>
-    :global(body, html) {
-        background: #0b0b0b;
-        margin: 0;
-        padding: 0;
-    }
-
+<style> 
     .container {
         display: flex;
         flex-direction: column;
@@ -18,6 +12,7 @@
         height: 100vh;
     }
 </style>
+
 <div class="container">
     <Header/>
     <RedirectButton/>
