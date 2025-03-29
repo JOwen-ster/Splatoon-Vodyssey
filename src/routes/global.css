@@ -1,3 +1,5 @@
+@import "./base.css";
+
 body, html {
     background: #0d0d0d;
     margin: 0;

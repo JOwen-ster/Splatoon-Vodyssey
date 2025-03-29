@@ -7,6 +7,7 @@
         display: flex;
         flex-direction: column;
         border: 5px solid #f4f5f6;
+        margin: 50px
     }
 
     .element-title {
@@ -34,7 +35,7 @@
 
 <div class="item">
     <h3 class="element-title">{title}</h3>
-    <video class="element-video" controls>
+    <video preload="metadata" class="element-video" controls>
         <source src={video_url} type="video/mp4" />
         <track src="captions.vtt" kind="captions" srclang="en" label="English Captions" />
     </video>
