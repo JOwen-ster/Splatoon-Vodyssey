@@ -1,3 +1,1 @@
-https://uiverse.io/MuhammadHasann/silent-lizard-44
-
-https://uiverse.io/alexruix/cowardly-ape-35
+Move pagination to the top on the sides of the search bar

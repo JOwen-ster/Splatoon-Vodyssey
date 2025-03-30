@@ -49,25 +49,11 @@
 </script>
 
 <style>
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Changed to exactly 3 columns */
-        width: 100%;
-    }
-
-    .search-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .search-bar {
         border: 2px solid #f4f5f6;
         border-radius: 25px;
         padding: 10px 20px;
         font-size: 25px;
-        font-weight: bold;
         font-family: monospace;
         background-color: rgb(70, 70, 255);
         color: #f4f5f6;
@@ -86,7 +72,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin: 20px 0;
+        padding: 25px 0;
     }
 
     .pagination button {
@@ -113,19 +99,15 @@
         color: #f4f5f6;
         margin: 0 20px;
     }
+
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Changed to exactly 3 columns */
+        width: 100%;
+        gap: 20px;
+    }
 </style>
 
-<div class="search-container">
-    <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={query}/>
-</div>
-
-<div class="container">
-    {#each paginatedVideos as video}
-        <VideoCard {...video} />
-    {/each}
-</div>
-
-{#if filtered_videos.length > itemsPerPage}
     <div class="pagination">
         <button 
             onclick={() => goToPage(1)} 
@@ -139,7 +121,8 @@
         >
             Previous
         </button>
-        
+
+        <input type="search" class="search-bar" placeholder="Search VODS..." bind:value={query}/>
         <span class="pagination-info">
             Page {currentPage} of {totalPages}
         </span>
@@ -157,4 +140,9 @@
             Last
         </button>
     </div>
-{/if}
+
+<div class="video-grid">
+    {#each paginatedVideos as video}
+        <VideoCard {...video} />
+    {/each}
+</div>

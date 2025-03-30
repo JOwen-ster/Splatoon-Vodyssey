@@ -10,7 +10,7 @@
         flex-direction: column;
         border: 3px solid #f4f5f6;
         border-radius: 25px;
-        margin: 20px;
+        margin: 0 25px;
     }
 
     .element-video {
@@ -22,19 +22,16 @@
     .element-header-container {
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid #f4f5f6;
-        padding: 5% 0;
+        padding: 5% 0 5% 5%;
     }
 
     .element-title {
         color: #f4f5f6;
-        padding: 0 0 0 5%;
         margin: 0;
     }
 
     .element-player {
         font-weight: bold;
-        padding: 0 0 0 5%;
         margin: 0;
         color: red;
     }
@@ -42,9 +39,9 @@
     .element-tag-container {
         display: flex;
         justify-content: left;
-        padding: 0 0 0 5%;
-        margin: 20px 0;
+        padding: 5% 0 5% 5%;
         gap: 10px;
+        border-top: 3px solid #f4f5f6;
     }
 
     .element-tag-container-item {
@@ -56,6 +53,7 @@
         font-weight: bold;
         font-family: monospace;
         transition: all 0.3s ease-in-out;
+        cursor: default;
     }
 
     .element-tag-container-item:hover {
