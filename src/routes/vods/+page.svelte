@@ -53,7 +53,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Changed to exactly 3 columns */
         width: 100%;
-        gap: 10px;
     }
 
     .search-container {
@@ -72,6 +71,14 @@
         font-family: monospace;
         background-color: rgb(70, 70, 255);
         color: #f4f5f6;
+    }
+
+    .search-bar::placeholder {
+        color: #f4f5f6;
+    }
+
+    .search-bar:focus::placeholder {
+        color: transparent;
     }
 
     .pagination {
