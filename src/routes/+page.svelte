@@ -1,9 +1,11 @@
 <script lang="ts">
+    import "./global.css";
     import Header from "$lib/components/Header.svelte";
     import RedirectButton from "$lib/components/RedirectButton.svelte";
 </script>
 
 <style> 
+
     .container {
         display: flex;
         flex-direction: column;

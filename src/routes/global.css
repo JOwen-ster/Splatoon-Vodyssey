@@ -1,7 +1,7 @@
 @import "./base.css";
 
 body, html {
-    background: #0d0d0d;
+    background: white;
     margin: 0;
     padding: 0;
     height: 100%;

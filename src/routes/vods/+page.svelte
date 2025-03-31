@@ -79,10 +79,10 @@
         padding: 8px 16px;
         border: 2px solid #f4f5f6;
         border-radius: 5px;
-        background-color: transparent;
-        color: #f4f5f6;
+        background-color: #f4f5f6;
+        color: rgb(70, 70, 255);
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.3s ease-in-out;
     }
 
     .pagination button:disabled {
@@ -91,12 +91,12 @@
     }
 
     .pagination button:hover:not(:disabled) {
-        background-color: #f4f5f6;
-        color: rgb(70, 70, 255);
+        background-color: rgb(70, 70, 255);
+        color: #f4f5f6;
     }
 
     .pagination-info {
-        color: #f4f5f6;
+        color: rgb(70, 70, 255);
         margin: 0 20px;
     }
 

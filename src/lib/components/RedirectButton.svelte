@@ -6,7 +6,7 @@
     .redirect-button-style {
         text-decoration: none;
         color: #f4f5f6;
-        border: 1px solid rgb(70, 70, 255);
+        border: 2px solid rgb(70, 70, 255);
         font-size: 25px;
         font-weight: bold;
         font-family: monospace;
@@ -18,10 +18,9 @@
 
     .redirect-button-style:hover {
         background-color: rgb(83, 83, 253);
-        border: 2px solid #f4f5f6;
         border-radius: 25px;
-        transform: scale(1.1);
-        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        transform: scale(1.2);
+        box-shadow: 0 0 20px rgb(0, 0, 0);
     }
 </style>
 
