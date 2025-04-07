@@ -1,11 +1,11 @@
-<script>
+<script lang='ts'>
     import videos from '$lib/data/video_objects';
     import VideoCard from '$lib/components/VideoCard.svelte';
 
-    let query = $state("");
-    let queryLower = $derived(query.toLowerCase());
-    let currentPage = $state(1);
-    let itemsPerPage = $state(6); // Changed to 6 items per page
+    let query: string = $state("");
+    let queryLower: string = $derived(query.toLowerCase());
+    let currentPage: number = $state(1);
+    let itemsPerPage: number = $state(6); // Changed to 6 items per page by default
 
     const processed_videos = videos.map(({ title, url, player, tags }) => {
         return {
@@ -34,7 +34,7 @@
         )
     );
 
-    function goToPage(page) {
+    function goToPage(page: number) {
         if (page >= 1 && page <= totalPages) {
             currentPage = page;
         }
