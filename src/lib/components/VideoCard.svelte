@@ -2,7 +2,7 @@
 	let {
 		title = 'Title',
 		video_url = '/SplatoonVodsIntro.mp4',
-		player = 'player',
+		player = 'Player',
 		social_link = 'https://example.com',
 		tags = ['tag1', 'tag2', 'tag3']
 	} = $props();
@@ -66,6 +66,7 @@
 
 	.card-tag-container {
 		display: flex;
+		flex: wrap;
 		justify-content: left;
 		border-radius: 0px 0px 20px 20px;
 		padding: 5% 0 5% 5%;
