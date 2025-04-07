@@ -39,6 +39,7 @@
 		margin: 0 25px;
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
 		border-radius: 20px;
+		overflow: hidden;
 	}
 
 	.card-video {
