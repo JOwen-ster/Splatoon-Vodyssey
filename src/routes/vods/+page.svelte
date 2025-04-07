@@ -50,7 +50,7 @@
 
 <style>
     .search-bar {
-        border: 2px solid #f4f5f6;
+        border: none;
         border-radius: 25px;
         padding: 10px 20px;
         font-size: 25px;
@@ -61,6 +61,10 @@
 
     .search-bar::placeholder {
         color: #f4f5f6;
+    }
+
+    .search-bar:focus {
+        outline: none
     }
 
     .search-bar:focus::placeholder {
@@ -77,7 +81,7 @@
 
     .pagination button {
         padding: 8px 16px;
-        border: 2px solid #f4f5f6;
+        border: none;
         border-radius: 5px;
         background-color: #f4f5f6;
         color: rgb(70, 70, 255);
@@ -96,8 +100,12 @@
     }
 
     .pagination-info {
+        background-color: #f4f5f6;
+        border-radius: 5px;
+        padding: 8px 16px;
         color: rgb(70, 70, 255);
         margin: 0 20px;
+        cursor: default;
     }
 
     .video-grid {
@@ -106,6 +114,13 @@
         width: 100%;
         gap: 20px;
     }
+
+    @media only screen and (max-width: 600px) {
+        .video-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
 </style>
 
     <div class="pagination">
