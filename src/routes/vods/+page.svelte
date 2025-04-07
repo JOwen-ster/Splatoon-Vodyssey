@@ -108,15 +108,16 @@
         cursor: default;
     }
 
-    .video-grid {
+    .card-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Changed to exactly 3 columns */
         width: 100%;
         gap: 20px;
+        align-items: start;
     }
 
     @media only screen and (max-width: 600px) {
-        .video-grid {
+        .card-grid {
             grid-template-columns: repeat(1, 1fr);
         }
     }
@@ -156,7 +157,7 @@
         </button>
     </div>
 
-<div class="video-grid">
+<div class="card-grid">
     {#each paginatedVideos as video}
         <VideoCard {...video} />
     {/each}

@@ -4,7 +4,7 @@
 		video_url = '/SplatoonVodsIntro.mp4',
 		player = 'Player',
 		social_link = 'https://example.com',
-		tags = ['tag1', 'tag2', 'tag3']
+		tags = ['no tag(s) specified']
 	} = $props();
 	// wrap player name in an <a> tag to link to the player's page
 	// ::after underline
@@ -66,7 +66,8 @@
 
 	.card-tag-container {
 		display: flex;
-		flex: wrap;
+		flex-wrap: wrap;
+		flex-grow: 1;
 		justify-content: left;
 		border-radius: 0px 0px 20px 20px;
 		padding: 5% 0 5% 5%;

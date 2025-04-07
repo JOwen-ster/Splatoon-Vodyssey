@@ -32,7 +32,7 @@ const videos = [
         url: '/SplatoonVodsTowerControl.mp4',
         player: 'Player',
         social_link: 'https://example.com',
-        tags: ['tower control', 'advanced']
+        tags: ['tower control', 'advanced',]
     },
     {
         title: 'Splat Zones',
@@ -100,4 +100,3 @@ const videos = [
 ];
 
 export default videos;
-
