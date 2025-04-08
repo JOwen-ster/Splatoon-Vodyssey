@@ -65,7 +65,7 @@
 
 	.card-player-name {
 		font-weight: bold;
-		color: red;
+		color: rgba(70, 70, 255, 1);
 	}
 
 	.card-tag-container {
