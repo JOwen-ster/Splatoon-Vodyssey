@@ -6,8 +6,6 @@
 		social_link = 'https://example.com',
 		tags = ['no tag(s) specified']
 	} = $props();
-	// wrap player name in an <a> tag to link to the player's page
-	// ::after underline
 </script>
 
 <div class="card">
@@ -39,6 +37,11 @@
 		margin: 0 25px;
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
 		border-radius: 20px;
+		transition: box-shadow 0.3s ease-in-out ;
+	}
+
+	.card:hover {
+		box-shadow: rgba(70, 70, 255, 1) 0px 5px 15px;
 	}
 
 	.card-video {
@@ -56,6 +59,7 @@
 
 	.card-title {
 		color: #0d0d0d;
+		cursor: default;
 		margin: 0;
 	}
 

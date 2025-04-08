@@ -111,7 +111,6 @@
     .card-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Changed to exactly 3 columns */
-        width: 100%;
         gap: 20px;
         align-items: start;
     }
