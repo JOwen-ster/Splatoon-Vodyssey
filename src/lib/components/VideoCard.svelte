@@ -37,11 +37,11 @@
 		margin: 0 25px;
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
 		border-radius: 20px;
-		transition: box-shadow 0.3s ease-in-out ;
+		transition: box-shadow 0.3s ease-in-out;
 	}
 
 	.card:hover {
-		box-shadow: rgba(70, 70, 255, 1) 0px 5px 15px;
+		box-shadow: rgba(70, 70, 255, 1) 0px 5px 50px;
 	}
 
 	.card-video {
@@ -65,7 +65,13 @@
 
 	.card-player-name {
 		font-weight: bold;
-		color: rgba(70, 70, 255, 1);
+		color: red;
+		text-decoration: none;
+		transition: text-decoration 0.3s ease-in-out;
+	}
+
+	.card-player-name:hover {
+		text-decoration: underline;
 	}
 
 	.card-tag-container {
