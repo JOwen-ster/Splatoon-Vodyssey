@@ -1,11 +1,13 @@
-Add workflows?
+Add .github/workflows?
 
 Add CONTRIBUTING.md
 
-Add grid pages to bottom of screen
+Add page buttons to bottom of screen
 
-Add respnsive layout
+Add responsive layout (landing page)
 
-Add more info to landing page (mission, how to add vods)
+Add more info to landing page (mission, how to add vods, who made it, source code on footer)
 
-Add black border tag like styling to player name (invert colors on hover) 
+Add black border (tag styling) to player name (invert colors on hover) 
+
+Add dark mode
