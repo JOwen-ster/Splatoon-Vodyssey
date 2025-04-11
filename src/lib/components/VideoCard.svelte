@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let {
 		title = 'Title',
 		video_url = '/SplatoonVodsIntro.mp4',
@@ -9,9 +9,9 @@
 </script>
 
 <div class="card">
-	<video class="card-video" preload="metadata" controls>
-		<source src={video_url} type="video/mp4" />
-		<track src="captions.vtt" kind="captions" srclang="en" label="English Captions" />
+	<video class="card-video" controls>
+		<source src={video_url} type="video/mp4"/>
+		<track kind="captions"/>
 	</video>
 
 	<div class="card-header-container">
