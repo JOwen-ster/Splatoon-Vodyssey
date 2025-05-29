@@ -49,6 +49,7 @@
 </script>
 
 <style>
+    @import '../base.css';
     .search-bar {
         border: none;
         border-radius: 25px;
@@ -56,13 +57,13 @@
         font-size: 25px;
         font-family: monospace;
         background-color: rgb(70, 70, 255);
-        color: #f4f5f6;
+        color: var(--dull-white);
         width: 100%;
         max-width: 300px;
     }
 
     .search-bar::placeholder {
-        color: #f4f5f6;
+        color: var(--dull-white);
     }
 
     .search-bar:focus {
@@ -92,7 +93,7 @@
         padding: 8px 16px;
         border: none;
         border-radius: 5px;
-        background-color: #f4f5f6;
+        background-color: var(--dull-white);
         color: rgb(70, 70, 255);
         cursor: pointer;
         transition: all 0.3s ease-in-out;
@@ -106,11 +107,11 @@
 
     .pagination button:hover:not(:disabled) {
         background-color: rgb(70, 70, 255);
-        color: #f4f5f6;
+        color: var(--dull-white);
     }
 
     .pagination-info {
-        background-color: #f4f5f6;
+        background-color: var(--dull-white);
         border-radius: 5px;
         padding: 8px 16px;
         color: rgb(70, 70, 255);
