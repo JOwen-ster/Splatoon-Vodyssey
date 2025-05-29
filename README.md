@@ -1,4 +1,4 @@
-# [NEW REPOSITORY GO **__HERE__**](https://github.com/JOwen-ster/s3vods)
+# [NEW REPOSITORY CLICK -> HERE](https://github.com/JOwen-ster/s3vods)
 
 
 Could make a YouTube account with all the vods and use the site as a way to search through the youtube channel in a better way (via player or weapon) then clicking on the site redirects to the youtube video with the vod. Since you cant search youtube video via weapon and player unless its in the title, description, or tags to my knowledge.
