@@ -213,6 +213,7 @@
 
 <div class="card-grid">
     {#each paginatedVideos as video}
+    <!-- use a serverless function to fetch video thumbnail from youtube link -->
         <VideoCard {...video}/>
     {/each}
 </div>
